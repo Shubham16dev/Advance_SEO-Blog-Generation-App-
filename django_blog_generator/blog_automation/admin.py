@@ -8,12 +8,9 @@ class BlogGenerationAdmin(admin.ModelAdmin):
     list_filter = ['status', 'created_at', 'num_competitors']
     search_fields = ['title', 'primary_keywords']
     readonly_fields = ['created_at', 'updated_at', 'filename']
-    
     fieldsets = (
-        ('Blog Information', {
-@admin.register(BlogGeneration)class BlogGenerationAdmin(admin.ModelAdmin):    pass
-
-  // Fixed
+        (None, {
+            'fields': ('title', 'primary_keywords', 'num_competitors', 'secondary_keywords', 'blog_outline', 'target_length')
 }),
         ('Generation Status', {
             'fields': ('status', 'error_message')
