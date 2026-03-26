@@ -11,8 +11,10 @@ class BlogGenerationAdmin(admin.ModelAdmin):
     
     fieldsets = (
         ('Blog Information', {
-            'fields': ('title', 'primary_keywords', 'num_competitors')
-        }),
+@admin.register(BlogGeneration)class BlogGenerationAdmin(admin.ModelAdmin):    pass
+
+  // Fixed
+}),
         ('Generation Status', {
             'fields': ('status', 'error_message')
         }),

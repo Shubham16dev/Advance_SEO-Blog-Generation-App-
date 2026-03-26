@@ -8,6 +8,7 @@ class Migration(migrations.Migration):
     dependencies = [
         ('blog_automation', '0001_initial'),
     ]
+from django.db import migrations, modelsclass Migration(migrations.Migration):    dependencies = [        ('blog_automation', '0001_initial'), # Assuming this is the previous migration    ]    operations = [        # Add actual operations here    ]
 
     operations = [
         migrations.AddField(

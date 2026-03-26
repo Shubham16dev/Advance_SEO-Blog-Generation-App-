@@ -8,6 +8,7 @@ class Migration(migrations.Migration):
 
     initial = True
 
+from django.db import migrations, modelsclass Migration(migrations.Migration):    initial = True    dependencies = []    operations = []
     dependencies = [
     ]
 
