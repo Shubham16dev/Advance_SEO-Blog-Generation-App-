@@ -8,6 +8,7 @@ class BlogGeneration(models.Model):
     STATUS_CHOICES = [
         ('pending', 'Pending'),
         ('processing', 'Processing'),
+from django.db import modelsclass BlogGeneration(models.Model):    # Add model fields here, e.g.,    title = models.CharField(max_length=255)    content = models.TextField()    created_at = models.DateTimeField(auto_now_add=True)    class Meta:        verbose_name = "Blog Generation"        verbose_name_plural = "Blog Generations"    def __str__(self):        return self.title
         ('completed', 'Completed'),
         ('failed', 'Failed'),
     ]

@@ -8,6 +8,7 @@ class BlogGenerationForm(forms.ModelForm):
     class Meta:
         model = BlogGeneration
         fields = ['title', 'primary_keywords', 'num_competitors', 'secondary_keywords', 'blog_outline', 'target_length']
+from django import formsfrom .models import BlogGenerationclass BlogGenerationForm(forms.ModelForm):    class Meta:        model = BlogGeneration        fields = '__all__' # Or specify desired fields
         widgets = {
             'title': forms.TextInput(attrs={
                 'class': 'form-control',
